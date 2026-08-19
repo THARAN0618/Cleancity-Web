@@ -1,0 +1,7 @@
+node_modules/
+.next/
+.env
+backend/cleancity.db
+backend/uploads/*
+!backend/uploads/.gitkeep
+.DS_Store
