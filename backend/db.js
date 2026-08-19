@@ -8,6 +8,11 @@ const pool = mysql.createPool({
   user:     process.env.DB_USER     || 'root',
   password: process.env.DB_PASSWORD || '',
   database: process.env.DB_NAME     || 'cleancity',
+
+  ssl: {
+    rejectUnauthorized: false
+  },
+
   waitForConnections: true,
   connectionLimit: 10
 });
